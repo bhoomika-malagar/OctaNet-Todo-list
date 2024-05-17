@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-image: url('gridlist.jpg');
+    background-size: cover;
+}   
+
+.c{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: pink;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    background-color:white;
+    text-align: center;
+    max-width: 300px; 
+    margin: 0 auto; 
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.todo__value {
+    cursor: inherit;
+    background : transparent;
+    border: none;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    flex-grow: 1;
+}
+.todo_checkbox{
+    cursor: inherit;
+}
+.todo:has(.todo__checkbox:checked) {
+    color: #555555;
+    text-decoration:line-through 1.5px;
+}
